@@ -36,6 +36,16 @@ async function loadMessages() {
     div.querySelector(".date").textContent =
       new Date(message.created_at).toLocaleString();
 
+    const copyButton = div.querySelector(".copy-button");
+
+    copyButton.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(message.message);
+      copyButton.textContent = "Copied!";
+      setTimeout(() => {
+        copyButton.textContent = "Copy";
+      }, 1500);
+    });
+
     messagesDiv.appendChild(div);
   }
 }
