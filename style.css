@@ -30,7 +30,7 @@ body {
   max-width: 700px;
   margin: 40px auto;
   padding: 30px;
-  background: linear-gradient(135deg, #ffe6f0 0%, #f7b6d2 45%, #df78aa 100%);
+  /* background: linear-gradient(135deg, #ffe6f0 0%, #f7b6d2 45%, #df78aa 100%); */
   background-attachment: fixed;
   color: #4a1830;
 }
