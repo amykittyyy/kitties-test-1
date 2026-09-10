@@ -75,8 +75,11 @@ button {
 
 .copy-button {
   position: absolute;
-  right: 18px;
-  top: 50%;
+  right: -5%;
+  top: 0;
+  bottom: 0;
+  margin-block: auto;
+  height: fit-content;
   width: auto;
   margin: 0;
   padding: 6px 10px;
