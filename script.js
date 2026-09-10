@@ -3,12 +3,7 @@ import { createClient }
 
 const SUPABASE_URL = "https://bclcknoxyjvrqqdhoevo.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_VFxx1zL_Je9RKEvutGNZmQ_faQeMmtE";
-
-const supabase = createClient(
-  SUPABASE_URL,
-  SUPABASE_ANON_KEY
-);
-
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 const form = document.getElementById("messageForm");
 const messagesDiv = document.getElementById("messages");
 
