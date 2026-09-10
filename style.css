@@ -85,15 +85,23 @@ button:active {
     inset 0 2px 5px rgba(150, 50, 100, 0.08),
     0 4px 10px rgba(150, 50, 100, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
   cursor: url("cursors/Link Select.cur"), auto;
 }
 
 .copy-button {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
   width: auto;
-  margin-top: 10px;
-  margin-bottom: 0;
-  padding: 6px 12px;
-  font-size: 12px;
+  margin: 0;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(169, 40, 96, 0.25);
+  border-radius: 8px;
+  color: #a92860;
+  cursor: url("cursors/Link Select.cur"), auto;
 }
 
 /* Hovers */
