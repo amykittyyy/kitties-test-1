@@ -10,7 +10,7 @@ body {
   padding: 30px;
   color: #4a1830;
   box-sizing: border-box;
-  border: 3px solid #4a183030;
+  border: 3px solid transparent;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   background-attachment: fixed;
