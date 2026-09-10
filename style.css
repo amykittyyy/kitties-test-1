@@ -1,6 +1,6 @@
 html {
   min-height: 100vh;
-  cursor: url("/cursor.png"), auto;
+  cursor: url("/cursors/Normal Select.cur"), auto;
 }
 
 * {
