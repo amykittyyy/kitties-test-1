@@ -1,7 +1,7 @@
 html,
 body,
 * {
-  cursor: url("/cursors/Normal Select.cur"), auto;
+  cursor: url("cursors/Normal Select.cur"), auto;
 }
 
 body {
