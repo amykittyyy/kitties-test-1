@@ -22,6 +22,7 @@ html {
 
 html, body {
   cursor: url("cursors/Normal Select.cur"), auto;
+  background: transparent;
 }
 
 body {
