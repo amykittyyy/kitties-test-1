@@ -65,6 +65,22 @@ button {
   cursor: url("cursors/Link Select.cur"), auto;
 }
 
+button:active {
+@@ -99,6 +102,7 @@ button:active {
+  box-shadow:
+    0 2px 0 #a82b5e,
+    0 4px 8px rgba(130, 30, 80, 0.2);
+  cursor: url("cursors/Link Select.cur"), auto;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 2px 0 #a82b5e,
+    0 4px 8px rgba(130, 30, 80, 0.2);
+  cursor: url("cursors/Link Select.cur"), auto;
+}
+
 /* Message boxes */
 .message {
   border: 1px solid #e39abb;
@@ -83,7 +99,6 @@ button {
 /* Hovers */
 input:hover,
 textarea:hover,
-button:hover,
 .message:hover {
   transform: translateY(-2px);
   box-shadow:
@@ -102,14 +117,6 @@ textarea:focus {
     0 0 0 3px rgba(214, 77, 138, 0.15),
     0 5px 15px rgba(150, 50, 100, 0.15);
   cursor: url("cursors/Handwriting.cur"), auto;
-}
-
-button:active {
-  transform: translateY(3px);
-  box-shadow:
-    0 2px 0 #a82b5e,
-    0 4px 8px rgba(130, 30, 80, 0.2);
-  cursor: url("cursors/Link Select.cur"), auto;
 }
 
 /* Other */
