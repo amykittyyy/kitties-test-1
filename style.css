@@ -1,10 +1,7 @@
-html {
-  min-height: 100vh;
-  cursor: url("/cursors/Normal Select.cur"), auto;
-}
-
+html,
+body,
 * {
-  cursor: inherit;
+  cursor: url("/cursors/Normal Select.cur"), auto;
 }
 
 body {
@@ -20,7 +17,6 @@ body {
   );
   background-attachment: fixed;
   color: #4a1830;
-  cursor: inherit;
 }
 
 /* Inputs */
