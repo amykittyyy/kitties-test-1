@@ -1,39 +1,76 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 20px;
+import { createClient }
+  from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+
+const SUPABASE_URL = "https://bclcknoxyjvrqqdhoevo.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_VFxx1zL_Je9RKEvutGNZmQ_faQeMmtE";
+
+const supabase = createClient(
+  SUPABASE_URL,
+  SUPABASE_ANON_KEY
+);
+
+const form = document.getElementById("messageForm");
+const messagesDiv = document.getElementById("messages");
+
+async function loadMessages() {
+  const { data, error } = await supabase
+    .from("messages")
+    .select("*")
+    .order("created_at", { ascending: false });
+
+  if (error) {
+    console.error(error);
+    messagesDiv.textContent = "Could not load messages.";
+    return;
+  }
+
+  messagesDiv.innerHTML = "";
+
+  for (const message of data) {
+    const div = document.createElement("div");
+    div.className = "message";
+
+    div.innerHTML = `
+      <div class="username"></div>
+      <div class="text"></div>
+      <div class="date"></div>
+    `;
+
+    div.querySelector(".username").textContent = message.username;
+    div.querySelector(".text").textContent = message.message;
+    div.querySelector(".date").textContent =
+      new Date(message.created_at).toLocaleString();
+
+    messagesDiv.appendChild(div);
+  }
 }
 
-input, textarea, button {
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  padding: 10px;
-  font: inherit;
-}
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
 
-textarea {
-  height: 100px;
-  resize: vertical;
-}
+  const username = document.getElementById("username").value.trim();
+  const message = document.getElementById("message").value.trim();
 
-button {
-  cursor: pointer;
-}
+  if (!username || !message) return;
 
-.message {
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin-top: 15px;
-  border-radius: 8px;
-}
+  const { error } = await supabase
+    .from("messages")
+    .insert({
+      username: username,
+      message: message
+    });
 
-.username {
-  font-weight: bold;
-}
+  if (error) {
+    console.error(error);
+    alert("Could not post message.");
+    return;
+  }
 
-.date {
-  color: #777;
-  font-size: 12px;
-}
+  document.getElementById("message").value = "";
+
+  await loadMessages();
+});
+
+loadMessages();
+
+
