@@ -38,7 +38,17 @@ textarea {
 
   outline: none;
   transition: 0.2s ease;
-  cursor: url("cursors/Text Select.cur"), auto;
+  cursor: url("cursors/Link Select.cur"), auto;
+}
+
+input:hover,
+textarea:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(130, 40, 90, 0.18),
+    0 2px 5px rgba(130, 40, 90, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 input:focus,
