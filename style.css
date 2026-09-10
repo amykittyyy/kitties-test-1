@@ -1,3 +1,22 @@
+html {
+    min-height: 100%;
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e1b4b,
+        #312e81,
+        #0f172a
+    );
+    background-size: 300% 300%;
+    animation: gradient1 15s ease infinite;
+}
+
+@keyframes gradient1 {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 html, body {
   cursor: url("cursors/Normal Select.cur"), auto;
 }
