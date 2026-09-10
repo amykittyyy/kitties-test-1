@@ -54,10 +54,11 @@ button {
   cursor: url("cursors/Link Select.cur"), auto;
 }
 
-button:active {
+button:hover {
+  transform: translateY(-1px);
   box-shadow:
-    0 2px 0 #a82b5e,
-    0 4px 8px rgba(130, 30, 80, 0.2);
+    0 7px 0 #a82b5e,
+    0 12px 20px rgba(130, 30, 80, 0.3);
   cursor: url("cursors/Link Select.cur"), auto;
 }
 
@@ -66,7 +67,7 @@ button:active {
   box-shadow:
     0 2px 0 #a82b5e,
     0 4px 8px rgba(130, 30, 80, 0.2);
-  cursor: url("cursors/Link Select.cur"), auto;
+  cursor: url("cursors/Working in Background.cur"), auto;
 }
 
 /* Message boxes */
