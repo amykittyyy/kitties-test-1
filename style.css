@@ -16,7 +16,7 @@ body {
   color: #4a1830;
 
   /* Custom cursor */
-  cursor: url("cursors/Normal%20Select.ani"), auto;
+  cursor: url("cursors/Normal%20Select.cur"), auto;
 }
 
 /* Inputs */
