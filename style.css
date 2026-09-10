@@ -1,28 +1,9 @@
 html {
-    min-height: 100%;
-    background: linear-gradient(
-        90deg,
-        red,
-        orange,
-        yellow,
-        green,
-        cyan,
-        blue,
-        violet,
-        red
-    );
-    background-size: 400% 400%;
-    animation: gradient1 10s linear infinite;
-}
-
-@keyframes gradient1 {
-    0% {background-position: 0% 50%;}
-    100% {background-position: 100% 50%;}
+    background: linear-gradient(135deg, #ffe6f0 0%, #f7b6d2 45%, #df78aa 100%);
 }
 
 html, body {
   cursor: url("cursors/Normal Select.cur"), auto;
-  background: transparent !important;
 }
 
 body {
