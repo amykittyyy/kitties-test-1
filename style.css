@@ -35,6 +35,10 @@ textarea {
   resize: vertical;
 }
 
+textarea::-webkit-resizer {
+  cursor: url("cursors/Vertical Resize.cur"), auto;
+}
+
 /* Button */
 button {
   width: 100%;
