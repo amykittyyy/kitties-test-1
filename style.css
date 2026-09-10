@@ -39,7 +39,7 @@ textarea::-webkit-resizer {
   cursor: url("cursors/Vertical Resize.cur"), auto;
 }
 
-/* Button */
+/* Send button */
 button {
   width: 100%;
   box-sizing: border-box;
@@ -56,22 +56,6 @@ button {
     0 8px 15px rgba(130, 30, 80, 0.25);
   transition: all 0.15s ease;
   cursor: url("cursors/Link Select.cur"), auto;
-}
-
-button:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    0 7px 0 #a82b5e,
-    0 12px 20px rgba(130, 30, 80, 0.3);
-  cursor: url("cursors/Link Select.cur"), auto;
-}
-
-button:active {
-  transform: translateY(3px);
-  box-shadow:
-    0 2px 0 #a82b5e,
-    0 4px 8px rgba(130, 30, 80, 0.2);
-  cursor: url("cursors/Working in Background.cur"), auto;
 }
 
 /* Message boxes */
@@ -93,14 +77,13 @@ button:active {
   position: absolute;
   right: 18px;
   top: 50%;
-  transform: translateY(-50%);
   width: auto;
   margin: 0;
   padding: 6px 10px;
-  background: rgba(255, 255, 255, 0.35);
-  border: 1px solid rgba(169, 40, 96, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(169, 40, 96, 0.1);
   border-radius: 8px;
-  color: #a92860;
+  color: #a9286040;
   cursor: url("cursors/Link Select.cur"), auto;
 }
 
@@ -119,6 +102,23 @@ input:focus, textarea:focus {
   border-color: #d64d8a;
   background: white;
   cursor: url("cursors/Handwriting.cur"), auto;
+}
+
+/* Button hovers and actives */
+button:hover, .copy-button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 7px 0 #a82b5e,
+    0 12px 20px rgba(130, 30, 80, 0.3);
+  cursor: url("cursors/Link Select.cur"), auto;
+}
+
+button:active, .copy-button:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 2px 0 #a82b5e,
+    0 4px 8px rgba(130, 30, 80, 0.2);
+  cursor: url("cursors/Working in Background.cur"), auto;
 }
 
 /* Other */
