@@ -4,7 +4,7 @@ body {
   margin: 40px auto;
   padding: 30px;
 
-  /* Deep pink gradient */
+  /* Pink gradient background */
   background: linear-gradient(
     135deg,
     #ffe6f0 0%,
@@ -14,9 +14,12 @@ body {
 
   background-attachment: fixed;
   color: #4a1830;
+
+  /* Custom cursor */
+  cursor: url("cursor.png"), auto;
 }
 
-/* Inputs and text area */
+/* Inputs */
 input,
 textarea {
   width: 100%;
@@ -27,6 +30,7 @@ textarea {
 
   border: 1px solid #e5a0bd;
   border-radius: 10px;
+
   background: rgba(255, 255, 255, 0.85);
 
   box-shadow:
@@ -37,7 +41,6 @@ textarea {
   transition: 0.2s ease;
 }
 
-/* Input focus effect */
 input:focus,
 textarea:focus {
   border-color: #d64d8a;
@@ -82,14 +85,7 @@ button {
   transition: all 0.15s ease;
 }
 
-/* Button hover */
 button:hover {
-  background: linear-gradient(
-    135deg,
-    #f06ba3,
-    #d5427d
-  );
-
   transform: translateY(-2px);
 
   box-shadow:
@@ -97,7 +93,6 @@ button:hover {
     0 12px 20px rgba(130, 30, 80, 0.3);
 }
 
-/* Button press */
 button:active {
   transform: translateY(3px);
 
@@ -106,28 +101,45 @@ button:active {
     0 4px 8px rgba(130, 30, 80, 0.2);
 }
 
-/* Message cards */
+/* Message boxes */
 .message {
-  border: 1px solid rgba(210, 100, 150, 0.4);
-  padding: 15px;
-  margin-top: 15px;
-  border-radius: 12px;
+  border: 1px solid #e39abb;
+  padding: 18px;
+  margin-top: 18px;
+  border-radius: 14px;
 
-  background: rgba(255, 255, 255, 0.78);
+  /* Pink glass gradient */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 238, 246, 0.95),
+    rgba(249, 190, 215, 0.88)
+  );
+
+  /* Depth */
+  box-shadow:
+    0 8px 20px rgba(130, 40, 90, 0.18),
+    0 2px 5px rgba(130, 40, 90, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Message hover */
+.message:hover {
+  transform: translateY(-3px);
 
   box-shadow:
-    0 8px 20px rgba(130, 40, 90, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.8);
-
-  backdrop-filter: blur(5px);
+    0 12px 28px rgba(130, 40, 90, 0.25),
+    0 3px 8px rgba(130, 40, 90, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 .username {
   font-weight: bold;
-  color: #b83268;
+  color: #a92860;
 }
 
 .date {
-  color: #777;
+  color: #8b6072;
   font-size: 12px;
 }
