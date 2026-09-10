@@ -1,19 +1,33 @@
-:root {
-    background: linear-gradient(135deg, #ffe6f0 0%, #f7b6d2 45%, #df78aa 100%) !important;
-}
-
 html, body {
   cursor: url("cursors/Normal Select.cur"), auto;
 }
 
 body {
   font-family: Arial, sans-serif;
+  min-height: 100vh;
   max-width: 700px;
   margin: 40px auto;
   padding: 30px;
-  /* background: linear-gradient(135deg, #ffe6f0 0%, #f7b6d2 45%, #df78aa 100%); */
-  background-attachment: fixed;
   color: #4a1830;
+  /* background: linear-gradient(135deg, #ffe6f0 0%, #f7b6d2 45%, #df78aa 100%); */
+  background: linear-gradient(
+        135deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        magenta,
+        red
+    );
+  background-size: 400% 100%;
+  animation: gradient1 8s linear infinite;
+  background-attachment: fixed;
+}
+@keyframes gradient1 {
+    0% {background-position: 0% 50%;}
+    100% {background-position: 100% 50%;}
 }
 
 /* Inputs */
