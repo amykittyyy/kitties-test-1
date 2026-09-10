@@ -38,7 +38,7 @@ textarea {
 
   outline: none;
   transition: 0.2s ease;
-  cursor: url("cursors/Normal Select.cur"), auto;
+  cursor: url("cursors/Text Select.cur"), auto;
 }
 
 input:focus,
@@ -49,6 +49,7 @@ textarea:focus {
   box-shadow:
     0 0 0 3px rgba(214, 77, 138, 0.15),
     0 5px 15px rgba(150, 50, 100, 0.15);
+  cursor: url("cursors/Handwriting.cur"), auto;
 }
 
 textarea {
@@ -83,6 +84,7 @@ button {
     0 8px 15px rgba(130, 30, 80, 0.25);
 
   transition: all 0.15s ease;
+  cursor: url("cursors/Link Select.cur"), auto;
 }
 
 button:hover {
@@ -91,6 +93,7 @@ button:hover {
   box-shadow:
     0 7px 0 #a82b5e,
     0 12px 20px rgba(130, 30, 80, 0.3);
+  cursor: url("cursors/Link Select.cur"), auto;
 }
 
 button:active {
@@ -99,6 +102,7 @@ button:active {
   box-shadow:
     0 2px 0 #a82b5e,
     0 4px 8px rgba(130, 30, 80, 0.2);
+  cursor: url("cursors/Link Select.cur"), auto;
 }
 
 /* Message boxes */
