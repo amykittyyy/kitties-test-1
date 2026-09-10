@@ -16,7 +16,7 @@ body {
   color: #4a1830;
 
   /* Custom cursor */
-  cursor: url("cursor.png"), auto;
+  cursor: url("cursors/cursor.ani"), auto;
 }
 
 /* Inputs */
