@@ -29,7 +29,7 @@ async function loadMessages() {
       <div class="username"></div>
       <div class="text"></div>
       <div class="date"></div>
-      <button class="copy-button">Copy</button>
+      <button class="copy-button">copy</button>
     `;
 
     div.querySelector(".username").textContent = message.username;        // populate div
