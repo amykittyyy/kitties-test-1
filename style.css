@@ -1,5 +1,4 @@
-html, 
-body {
+html, body {
   cursor: url("cursors/Normal Select.cur"), auto;
 }
 
@@ -8,34 +7,24 @@ body {
   max-width: 700px;
   margin: 40px auto;
   padding: 30px;
-  background: linear-gradient(
-    135deg,
-    #ffe6f0 0%,
-    #f7b6d2 45%,
-    #df78aa 100%
-  );
+  background: linear-gradient(135deg, #ffe6f0 0%, #f7b6d2 45%, #df78aa 100%);
   background-attachment: fixed;
   color: #4a1830;
 }
 
 /* Inputs */
-input,
-textarea {
+input, textarea {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 12px;
   padding: 12px 15px;
   font: inherit;
-
   border: 1px solid #e5a0bd;
   border-radius: 10px;
-
   background: rgba(255, 255, 255, 0.85);
-
   box-shadow:
     inset 0 2px 5px rgba(150, 50, 100, 0.08),
     0 4px 10px rgba(150, 50, 100, 0.12);
-
   outline: none;
   transition: 0.2s ease;
   cursor: url("cursors/Link Select.cur"), auto;
@@ -96,9 +85,7 @@ button:active {
 }
 
 /* Hovers */
-input:hover,
-textarea:hover,
-.message:hover {
+input:hover, textarea:hover, .message:hover {
   transform: translateY(-2px);
   box-shadow:
     0 8px 20px rgba(130, 40, 90, 0.18),
@@ -108,8 +95,7 @@ textarea:hover,
 }
 
 /* Focuses */
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
   border-color: #d64d8a;
   background: white;
   box-shadow:
