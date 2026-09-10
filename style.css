@@ -1,6 +1,4 @@
-html,
-body,
-* {
+html {
   cursor: url("cursors/Normal Select.cur"), auto;
 }
 
@@ -17,6 +15,7 @@ body {
   );
   background-attachment: fixed;
   color: #4a1830;
+  cursor: url("cursors/Normal Select.cur"), auto;
 }
 
 /* Inputs */
@@ -39,6 +38,7 @@ textarea {
 
   outline: none;
   transition: 0.2s ease;
+  cursor: url("cursors/Normal Select.cur"), auto;
 }
 
 input:focus,
