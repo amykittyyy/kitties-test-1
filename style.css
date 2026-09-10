@@ -1,22 +1,20 @@
+* {
+  cursor: url("cursors/Normal Select.cur"), auto;
+}
+
 body {
   font-family: Arial, sans-serif;
   max-width: 700px;
   margin: 40px auto;
   padding: 30px;
-
-  /* Pink gradient background */
   background: linear-gradient(
     135deg,
     #ffe6f0 0%,
     #f7b6d2 45%,
     #df78aa 100%
   );
-
   background-attachment: fixed;
   color: #4a1830;
-
-  /* Custom cursor */
-  cursor: url("cursors/Normal Select.cur"), auto;
 }
 
 /* Inputs */
