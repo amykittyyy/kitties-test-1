@@ -1,4 +1,5 @@
-html {
+html, 
+body {
   cursor: url("cursors/Normal Select.cur"), auto;
 }
 
@@ -15,7 +16,6 @@ body {
   );
   background-attachment: fixed;
   color: #4a1830;
-  cursor: url("cursors/Normal Select.cur"), auto;
 }
 
 /* Inputs */
@@ -41,27 +41,6 @@ textarea {
   cursor: url("cursors/Link Select.cur"), auto;
 }
 
-input:hover,
-textarea:hover {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 8px 20px rgba(130, 40, 90, 0.18),
-    0 2px 5px rgba(130, 40, 90, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.9);
-}
-
-input:focus,
-textarea:focus {
-  border-color: #d64d8a;
-  background: white;
-
-  box-shadow:
-    0 0 0 3px rgba(214, 77, 138, 0.15),
-    0 5px 15px rgba(150, 50, 100, 0.15);
-  cursor: url("cursors/Handwriting.cur"), auto;
-}
-
 textarea {
   height: 100px;
   resize: vertical;
@@ -73,45 +52,16 @@ button {
   box-sizing: border-box;
   margin-bottom: 10px;
   padding: 12px;
-
   font: inherit;
   font-weight: bold;
   color: white;
-
-  background: linear-gradient(
-    135deg,
-    #e95b96,
-    #c93672
-  );
-
+  background: linear-gradient(135deg, #e95b96, #c93672);
   border: none;
   border-radius: 10px;
-
-  cursor: pointer;
-
   box-shadow:
     0 5px 0 #a82b5e,
     0 8px 15px rgba(130, 30, 80, 0.25);
-
   transition: all 0.15s ease;
-  cursor: url("cursors/Link Select.cur"), auto;
-}
-
-button:hover {
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 7px 0 #a82b5e,
-    0 12px 20px rgba(130, 30, 80, 0.3);
-  cursor: url("cursors/Link Select.cur"), auto;
-}
-
-button:active {
-  transform: translateY(3px);
-
-  box-shadow:
-    0 2px 0 #a82b5e,
-    0 4px 8px rgba(130, 30, 80, 0.2);
   cursor: url("cursors/Link Select.cur"), auto;
 }
 
@@ -121,35 +71,48 @@ button:active {
   padding: 18px;
   margin-top: 18px;
   border-radius: 14px;
-
-  /* Pink glass gradient */
-  background: linear-gradient(
-    135deg,
-    rgba(255, 238, 246, 0.95),
-    rgba(249, 190, 215, 0.88)
-  );
-
-  /* Depth */
+  background: linear-gradient(135deg, rgba(255, 238, 246, 0.95), rgba(249, 190, 215, 0.88));
   box-shadow:
     0 8px 20px rgba(130, 40, 90, 0.18),
     0 2px 5px rgba(130, 40, 90, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
-
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: url("cursors/Link Select.cur"), auto;
 }
 
-/* Message hover */
+/* Hovers */
+input:hover,
+textarea:hover,
+button:hover,
 .message:hover {
-  transform: translateY(-3px);
-
+  transform: translateY(-2px);
   box-shadow:
-    0 12px 28px rgba(130, 40, 90, 0.25),
-    0 3px 8px rgba(130, 40, 90, 0.12),
+    0 8px 20px rgba(130, 40, 90, 0.18),
+    0 2px 5px rgba(130, 40, 90, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
   cursor: url("cursors/Link Select.cur"), auto;
 }
 
+/* Focuses */
+input:focus,
+textarea:focus {
+  border-color: #d64d8a;
+  background: white;
+  box-shadow:
+    0 0 0 3px rgba(214, 77, 138, 0.15),
+    0 5px 15px rgba(150, 50, 100, 0.15);
+  cursor: url("cursors/Handwriting.cur"), auto;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow:
+    0 2px 0 #a82b5e,
+    0 4px 8px rgba(130, 30, 80, 0.2);
+  cursor: url("cursors/Link Select.cur"), auto;
+}
+
+/* Other */
 .username {
   font-weight: bold;
   color: #a92860;
