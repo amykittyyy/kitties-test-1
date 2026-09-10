@@ -9,7 +9,8 @@ body {
   margin: 40px auto;
   padding: 30px;
   color: #4a1830;
-  background: linear-gradient(135deg, #ffe6f0 0%, #f7b6d2 45%, #df78aa 100%);
+  /* background: linear-gradient(135deg, #ffe6f0 0%, #f7b6d2 45%, #df78aa 100%); */
+  background: linear-gradient(135deg, red, blue, green, pink, purple, white);
   background-size: 400% 100%;
   animation: gradient1 10s ease infinite; */
   background-attachment: fixed;
