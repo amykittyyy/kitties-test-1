@@ -16,6 +16,7 @@ body {
   animation: gradient1 30s ease infinite;
   background-attachment: fixed;
 }
+
 @keyframes gradient1 {
   0% {background-position: 0% 50%;}
   100% {background-position: 100% 50%;}
