@@ -84,6 +84,14 @@ button:active {
   cursor: url("cursors/Link Select.cur"), auto;
 }
 
+.copy-button {
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
 /* Hovers */
 input:hover, textarea:hover, .message:hover {
   transform: translateY(-2px);
