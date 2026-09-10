@@ -136,6 +136,7 @@ button:active {
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: url("cursors/Link Select.cur"), auto;
 }
 
 /* Message hover */
@@ -146,6 +147,7 @@ button:active {
     0 12px 28px rgba(130, 40, 90, 0.25),
     0 3px 8px rgba(130, 40, 90, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  cursor: url("cursors/Link Select.cur"), auto;
 }
 
 .username {
