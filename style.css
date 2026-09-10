@@ -75,7 +75,7 @@ button {
 
 .copy-button {
   position: absolute;
-  right: -15%;
+  right: -20px;
   top: 0;
   bottom: 0;
   margin-block: auto;
